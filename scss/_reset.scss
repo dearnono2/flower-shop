@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -22,9 +21,7 @@ a {
 
 /* float 초기화 */
 .wrap::after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
-
-/*# sourceMappingURL=style.css.map */
