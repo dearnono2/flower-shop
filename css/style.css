@@ -28,6 +28,275 @@ a {
   clear: both;
 }
 
+#header_sub {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+#header_sub .inner {
+  width: 1180px;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
+  /* 모바일 햄버거 메뉴버튼 */
+}
+#header_sub .inner .logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#header_sub .inner .logo a {
+  background: url(../img/logo.png) no-repeat;
+  width: 200px;
+  height: 100px;
+  display: block;
+}
+#header_sub .inner .logo a span {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 0;
+  height: 0;
+}
+#header_sub .inner .menuWeb #gnb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border-bottom: 1px solid #555;
+  border-top: 1px solid #555;
+}
+#header_sub .inner .menuWeb #gnb li {
+  float: left;
+  margin: 0 50px;
+}
+#header_sub .inner .menuWeb #gnb li a {
+  color: #333;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+}
+#header_sub .inner .menuWeb #gnb li a::before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: attr(data-hover);
+  transition: 0.3s;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+}
+#header_sub .inner .menuWeb #gnb li:hover a, #header_sub .inner .menuWeb #gnb li:focus a {
+  transform: rotateX(90deg) translateY(-22px);
+}
+#header_sub .inner .menuWeb #gnb li:hover a::before, #header_sub .inner .menuWeb #gnb li:focus a::before {
+  border-bottom: 1px solid #333;
+}
+#header_sub .inner .menuWeb #gnb::after {
+  content: "";
+  display: block;
+  margin-top: 40px;
+}
+#header_sub .inner .menuWeb .util {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+}
+#header_sub .inner .menuWeb .util li {
+  float: left;
+  margin-left: 20px;
+}
+#header_sub .inner .menuWeb .util li a {
+  color: #333;
+  font-size: 14px;
+}
+#header_sub .inner .menuWeb .util li a i {
+  color: #9D5353;
+}
+#header_sub .inner .menuWeb .util li:hover a, #header_sub .inner .menuWeb .util li:hover i {
+  color: goldenrod;
+}
+#header_sub .inner .btnCall {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* 웹 버전일 때 안보이게 하기 */
+  display: none;
+  width: 20px;
+  height: 20px;
+  /* 자바스크립트 */
+}
+#header_sub .inner .btnCall::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+  /* 햄버거 버튼(top)이 모양을 바꾸면서 delay되는 시간이 필요하기 때문에 transform 0.5s 0.5s를 준것임.*/
+  /* 중요함!! 복습하자!! */
+}
+#header_sub .inner .btnCall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+}
+#header_sub .inner .btnCall span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  transition: 1s;
+  text-indent: -9999px;
+}
+#header_sub .inner .btnCall.on::before {
+  top: 50%;
+  margin-top: -1px;
+  transform: rotate(45deg);
+}
+#header_sub .inner .btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+#header_sub .inner .btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+#header_sub .inner .menuMo {
+  width: 270px;
+  height: 100vh;
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  padding: 60px 30px;
+  z-index: 10;
+  transition: 0.5s;
+}
+#header_sub .inner .menuMo.on {
+  left: 0;
+}
+#header_sub .inner .menuMo h1 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #666;
+  text-align: center;
+}
+#header_sub .inner .menuMo h1 a {
+  display: block;
+  font: bold 24px/1 "arial";
+  color: #fff;
+}
+#header_sub .inner .menuMo h1 span {
+  font-size: 12px;
+  color: #aaa;
+}
+#header_sub .inner .menuMo #gnbMo li a {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #444;
+  font: bold 14px/1 "arial";
+  color: #888;
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  padding: 0 0 150px;
+  margin-top: 30px;
+}
+.content .sub_vidual {
+  width: 100%;
+  height: 250px;
+  background: #bbb;
+  margin-bottom: 100px;
+}
+.content .inner {
+  width: 1180px;
+  margin: 0 auto;
+  min-height: 500px;
+}
+.content .inner h1 {
+  font: normal 50px/1 "arial";
+  color: #000;
+  margin-bottom: 60px;
+}
+.content .inner h1 span {
+  font: normal 20px/1 "맑은 고딕";
+  color: #aaa;
+}
+.content .inner h1 span::before {
+  content: "/";
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+#footer_sub {
+  width: 100%;
+  background: #064420;
+  padding: 100px 0;
+}
+#footer_sub .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+#footer_sub .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer_sub .inner h2 {
+  font: bold 24px/1 "arial";
+  color: #ccc;
+  float: left;
+}
+#footer_sub .inner ul {
+  float: right;
+}
+#footer_sub .inner ul li {
+  float: left;
+  margin-left: 20px;
+}
+#footer_sub .inner ul li a {
+  font: bold 14px/1 "arial";
+  color: #ccc;
+}
+#footer_sub .inner address {
+  float: left;
+  width: 100%;
+  font: 12px/1 "arial";
+  color: #ccc;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+#footer_sub .inner p {
+  float: left;
+  width: 100%;
+  font: 12px/1 "arial";
+  color: #ddd;
+}
+
 /* 반응형 */
 /* tablet 구간 */
 @media screen and (max-width: 1179px) {
