@@ -22,20 +22,22 @@ categoryListNum(1);
 
 const productsItemsWrap = document.querySelector('.products-items-wrap');
 
-// 판매 상품 반복 
-const products = `                
-<div class="item">
-  <div class="img">
-    <img src="https://via.placeholder.com/300" alt="">
-  </div>
-  <div class="txt">
-    <p><b>PRODUCT</b></p>
-    <p>Lorem ipsum dolor sit amet.</p>
-  </div>
-</div>
-`;
-
+// dummy 이미지 주소
+{/* <img src="https://via.placeholder.com/300" alt=""></img> */}
 
 for(let i = 1; i <= 12; i++) {
+  // 판매 상품 반복 
+  const products = `                
+  <div class="item">
+    <div class="img">
+      
+      <img src="../img/product${i}.jpg" alt="">
+    </div>
+    <div class="txt">
+      <p><b>PRODUCT${i}</b></p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+  `;
   productsItemsWrap.insertAdjacentHTML('beforeend', products);
 }
