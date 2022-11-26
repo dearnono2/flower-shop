@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/a9d0d508cd.js" crossorigin="anonymous"></script>
   <script defer src="js/main.js"></script>
+  <script defer src="js/shop.js"></script>
 </head>
 <body>
   <!-- header -->
@@ -59,10 +60,85 @@
   <!-- // header -->
   
   <!-- section content -->
-  <section class="content">
-    <div class="sub_vidual"></div>
+  <section class="content shop">
+    <div class="sub_vidual">
+      <div class="top-pad">
+        <img src="img/sub1.png" alt="top pad background image">
+      </div>
+    </div>
     <div class="inner">
       <!-- 컨텐츠가 들어가는 부분 -->
+      <div class="wrapper">
+        <div class="category-sidebar">
+          <div class="category-menu">
+            <h2>CATEGORY</h2>
+            <ul id="category">
+              <!-- season flower category -->
+              <li>
+                <a href="#"><p>Season Flowers</p><span>▼</span></a>
+                <ul id="category-season-flowers">
+                  <li><a href="">SPRING</a></li>
+                  <li><a href="">SUMMER</a></li>
+                  <li><a href="">AUTUMN</a></li>
+                  <li><a href="">WINTER</a></li>
+                </ul>
+              </li>
+              <li>
+              <!-- home decor category -->
+                <a href="#"><p>Home Decor</p><span>▼</span></a>
+                <ul id="category-home-decor">
+                  <li><a href="">LIVING ROOM</a></li>
+                  <li><a href="">KITCHEN</a></li>
+                  <li><a href="">BALCONY</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Gifts</a></li>
+              <li><a href="#">Garden</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="products">
+          <div class="products-wrap">
+            <!-- 타이틀 및 정렬 탭 -->
+            <div class="products-top">
+              <h2>PRODUCTS</h2>
+              <label for="array"></label>
+              <select name="array" id="array">
+                <option value="newest">NEWEST</option>
+                <option value="price-high-row">PRICE(high-row)</option>
+                <option value="price-row-high">PRICE(row-high)</option>
+              </select>
+            </div>
+            <!-- 판매상품 영역 -->
+            <div class="products-middle">
+              <div class="products-items-wrap">
+                <!-- <div class="item">
+                  <div class="img">
+                    <img src="https://via.placeholder.com/300" alt="">
+                  </div>
+                  <div class="txt">
+                    <p><b>PRODUCT</b></p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <!-- page 영역 -->
+            <div class="products-bottom">
+              <div class="page">
+                <ul>
+                  <li><a href="">1</a></li>
+                  <li><a href="">2</a></li>
+                  <li><a href="">3</a></li>
+                  <li><a href="">4</a></li>
+                </ul>
+                <i class="fa-solid fa-angle-left prev"></i>
+                <i class="fa-solid fa-angle-right next"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- // section content -->

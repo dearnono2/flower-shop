@@ -1,0 +1,256 @@
+.shop {
+  .inner {
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .category-sidebar {
+        flex: 0.2;
+        position: relative;
+        // background: yellow;
+        
+        .category-menu {
+          margin-top: 40px;
+          padding: 30px;
+          height: 1200px;
+          h2 {
+            font-size: 22px;
+            margin-bottom: 40px;
+          }
+          #category {
+            
+            > li {
+              margin-bottom: 30px;
+              > a {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                color: #000;
+                p {
+                  font-size: 18px;
+                }
+                span {
+                  display: block;
+                  margin: 3px 0 0 5px;
+                }
+                &:after {
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  display: inline-block;
+                  height: 1em;
+                  width: 100%;
+                  border-bottom: 1px solid;
+                  margin-top: 10px;
+                  opacity: 0;
+                  transition: opacity 0.35s, transform 0.35s;
+                  transform: scale(0,1);
+                }
+                &:hover:after {
+                  opacity: 1;
+                  transform: scale(1);
+                }
+              }
+              ul {
+                display: none;
+                background: #9ECCA4;
+                margin-top: 10px;
+                padding: 5px 10px 10px;
+                border-radius: 10px;
+                li {
+                  margin-top: 10px;
+                  a {
+                    font-size: 14px;
+                    color: #fff;
+                    &:hover {
+                      border-bottom: 1px solid #fff;
+                    }
+                  }
+                }
+                &.on {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+      .products {
+        flex: 0.8;
+        // background: green;
+        .products-wrap {
+          padding: 40px;
+
+          // title and array
+          .products-top {
+            display: flex;
+            justify-content: space-between;
+            width: 100%; height: 100px;
+            select {
+              height: 36px;
+              padding: 0 10px;
+            }
+          }
+          // products
+          .products-middle {
+            width: 100%;
+            .products-items-wrap {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              .item {
+                width: 30%; 
+                background: gray;
+                text-align: center;
+                margin-bottom: 60px;
+                .img {
+                  width: 100%;
+                  img {
+                    width: 100%;
+                  }
+                }
+                .txt {
+                  padding: 5px;
+                }
+              }
+            }
+          }
+          // paging
+          .products-bottom {
+            padding-top: 30px;
+            width: 100%;
+            .page {
+              position: relative;
+              width: 200px;
+              margin: 20px auto;
+              // background: orange;
+              text-align: center;
+              line-height: 28px;
+              ul {
+                display: flex;
+                justify-content: center;
+                li {
+                  margin: 10px;
+                  width: 30px; height: 30px;
+                  border: 1px solid #064420;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  a {
+                    font-weight: bold;
+                    color: #064420;
+                  }
+                  &:hover {
+                    background: #064420;
+                    
+                  }
+                  &:hover a {
+                    color: #fff;
+                  }
+                }
+              }
+              i {
+                position: absolute;
+                font-size: 24px;
+                border: 1px solid #064420;
+                border-radius: 5px;
+                width: 30px; height: 30px;
+                padding: 2px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #064420;
+                cursor: pointer;
+                &.prev {
+                  position: absolute;
+                  left: -40px;
+                }
+                &.next {
+                  position: absolute;
+                  left: 210px;
+                }
+                &:hover {
+                  background: #064420;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* 반응형 */
+/* tablet 구간 */
+@media screen and (max-width: 1179px) {
+  .shop {
+    .inner {
+      .wrapper {
+        flex-direction: column;
+        .category-sidebar {
+          .category-menu {
+            padding: 40px;
+            height: 100%;
+            #category {
+              height: 100%;
+              display: flex;
+              // align-items: center;
+              // background: rgb(206, 239, 214);
+              flex-wrap: wrap;
+
+              & > li {
+                margin-right: 50px;
+              }
+            }
+          }
+        }
+        .products {
+          .products-wrap {
+            .products-top {
+              display: flex;
+              flex-wrap: wrap;
+              margin-bottom: 60px;
+              h2 {
+                width: 100%;
+                margin-bottom: 20px;
+              }
+              #array {
+                
+              }
+            }
+            .products-middle {
+              .products-items-wrap {
+                .item {
+                  width: 45%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* mobile 구간 */
+@media screen and (max-width:539px) {
+  .shop {
+    .inner {
+      .wrapper {
+        .products {
+          .products-wrap {
+            .products-middle {
+              .products-items-wrap {
+                .item {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
