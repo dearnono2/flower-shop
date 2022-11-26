@@ -232,6 +232,14 @@ a {
   background: url(../img/sub-top-pad-bg.jpg);
   margin-top: 30px;
 }
+.content .sub_vidual .sub-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 38px;
+  z-index: 3;
+}
 .content .sub_vidual .top-pad {
   position: absolute;
   width: 600px;

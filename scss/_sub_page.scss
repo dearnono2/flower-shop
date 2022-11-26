@@ -207,6 +207,14 @@
     background: url(../img/sub-top-pad-bg.jpg);
     margin-top: 30px;
 
+    .sub-title {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 38px;
+      z-index: 3;
+    }
+
     .top-pad {
       position: absolute;
       width: 600px;
