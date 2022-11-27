@@ -231,21 +231,24 @@
     /* 가운데 배치 공식 */
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    h1 {
-      font: normal 120px/1 'arial';
+    text-align: center;
+    h2 {
+      font: normal 50px/1 'arial';
       color: #fff;
       margin-bottom: 20px;
     }
     p {
       font: 16px/1.4 'arial';
       color: #888;
-      margin-bottom: 80px;
+      margin-bottom: 30px;
     }
     a {
       display: block;
-      width: 400px; height: 30px;
+      width: 200px;
+      margin: 0 auto;
       border: 1px solid #bbb;
-      font: bold 11px/30px 'arial';
+      font-size: 20px;
+      padding: 10px 0;
       color: #fff;
       text-align: center;
       &:hover {
@@ -572,7 +575,7 @@
   #visual {
     margin-top: 22px;
     height: calc(100vh - 101px);
-    // background: url(../img/visual1.jpg) no-repeat center/cover;
+    background: url(../img/visual.jpg) no-repeat center/cover;
     video {
       display: none;
     }
@@ -582,8 +585,19 @@
       h1 {
         font: normal 14vmin/1 'arial';
       }
+      p {
+        color: honeydew;
+        text-shadow: 2px 2px 10px #000;
+      }
       a {
-        width: 100%;
+        width: 80%;
+        border: 2px solid #eee;
+        &:hover {
+          background: rgba(86, 123, 107, 0.4);
+          color: #fff;
+          
+
+        }
       }
     }
   }
