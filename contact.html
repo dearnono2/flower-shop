@@ -64,7 +64,7 @@
   <!-- section content -->
   <section class="content contact">
     <div class="sub_vidual">
-      <h2 class="sub-title">CONTACT</h2>
+      <h2 class="sub-title">CONTACT US</h2>
       <div class="top-pad">
         <img src="img/sub4.png" alt="top pad background image">
       </div>
@@ -74,18 +74,24 @@
 
       <!-- 가게 위치 설명 및 운영시간 -->
       <div class="location">
+        <h2>CONTACT & STORE DETAILS</h2>
         <div class="pic">
-          <img src="img/shop.png" alt="shop image">
+          <img src="img/shop.jpg" alt="shop image">
         </div>
         <div class="guide">
-          <h1>LOCATION</h1>
-          <p>
-            396, Gangnam-daero, Gangnam-gu, Seoul, Republic of Korea
-          </p>
-          <p>
-            Our store is open Tuesday - Sunday, 9am - 4pm. <br>
-            FLOWER SHOP office is staffed Tuesday - Friday, 9am - 5pm.
-          </p>
+          <div class="guide-location">
+            <h3>LOCATION</h3>
+            <p>
+              396, Gangnam-daero, Gangnam-gu, Seoul, Republic of Korea
+            </p>
+          </div>
+          <div class="guide-detail">
+            <h3>STORE HOURS</h3>
+            <p>
+              Our store is open Tuesday - Sunday, 9am - 4pm. <br>
+              FLOWER SHOP office is staffed Tuesday - Friday, 9am - 5pm.
+            </p>
+          </div>
         </div>
         
       </div>
@@ -93,7 +99,12 @@
       <!-- section kakao map -->
       <!-- 지도 및 교통 버튼 -->
       <div class="kakao-map">
+        <div class="map-zoomable">
+          <p>You can zoom in on the map after clicking the button.</p>
+          <button onclick="setZoomable(true)">map zoomable</button>
+        </div>
         <div id="map"></div>
+
       </div>
       
       <!-- // section kakao map -->
