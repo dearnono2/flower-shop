@@ -21,11 +21,14 @@
         &:nth-of-type(2),
         &:nth-of-type(3) {
           padding: 30px;
+          font-family: "Raleway", sans-serif;
           h3 {
             text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
           }
           p {
-            width: 80%;
+            width: 400px;
             margin: 0 auto;
             line-height: 30px;
           }
@@ -35,6 +38,7 @@
     .youtube {
       background: #eff9ef;
       padding: 0 0 180px;
+      font-family: "Raleway", sans-serif;
       h2 {
         text-align: center;
         padding-top: 180px;
@@ -157,6 +161,12 @@
           h3 {
             margin: 20px 0;
           }
+          &:nth-of-type(2),
+          &:nth-of-type(3) {
+            p {
+              width: 100%;
+            }
+          }
           &:nth-child(2) {
             margin-bottom: 60px;
           }
@@ -193,11 +203,11 @@
             margin: 20px 0;
           }
           &:nth-child(2) {
-            width: 80%;
+            width: 70%;
           }
           &:nth-of-type(3) {
             order: 4;
-            width: 80%;
+            width: 70%;
           }
         }
       }

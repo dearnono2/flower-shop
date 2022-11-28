@@ -239,6 +239,7 @@ a {
   transform: translate(-50%, -50%);
   font-size: 38px;
   z-index: 3;
+  font-family: "Cormorant Garamond", serif;
 }
 .content .sub_vidual .top-pad {
   position: absolute;
@@ -256,7 +257,7 @@ a {
   min-height: 500px;
 }
 .content .inner h2 {
-  font: normal 50px/1 "arial";
+  font: normal 50px/1 "Cormorant Garamond", serif;
   color: #000;
   margin-bottom: 60px;
 }
@@ -415,18 +416,22 @@ a {
 }
 .about .inner .about-us .about-box:nth-of-type(2), .about .inner .about-us .about-box:nth-of-type(3) {
   padding: 30px;
+  font-family: "Raleway", sans-serif;
 }
 .about .inner .about-us .about-box:nth-of-type(2) h3, .about .inner .about-us .about-box:nth-of-type(3) h3 {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .about .inner .about-us .about-box:nth-of-type(2) p, .about .inner .about-us .about-box:nth-of-type(3) p {
-  width: 80%;
+  width: 400px;
   margin: 0 auto;
   line-height: 30px;
 }
 .about .inner .youtube {
   background: #eff9ef;
   padding: 0 0 180px;
+  font-family: "Raleway", sans-serif;
 }
 .about .inner .youtube h2 {
   text-align: center;
@@ -550,6 +555,9 @@ a {
   .about .inner .about-us .about-box h3 {
     margin: 20px 0;
   }
+  .about .inner .about-us .about-box:nth-of-type(2) p, .about .inner .about-us .about-box:nth-of-type(3) p {
+    width: 100%;
+  }
   .about .inner .about-us .about-box:nth-child(2) {
     margin-bottom: 60px;
   }
@@ -579,11 +587,11 @@ a {
     margin: 20px 0;
   }
   .about .inner .about-us .about-box:nth-child(2) {
-    width: 80%;
+    width: 70%;
   }
   .about .inner .about-us .about-box:nth-of-type(3) {
     order: 4;
-    width: 80%;
+    width: 70%;
   }
   .about .inner .youtube {
     width: 100%;
@@ -649,7 +657,7 @@ a {
 }
 .shop .inner .wrapper .category-sidebar .category-menu #category > li ul {
   display: none;
-  background: #9ECCA4;
+  background: #f7ebe0;
   margin-top: 10px;
   padding: 5px 10px 10px;
   border-radius: 10px;
@@ -659,10 +667,10 @@ a {
 }
 .shop .inner .wrapper .category-sidebar .category-menu #category > li ul li a {
   font-size: 14px;
-  color: #fff;
+  color: #333;
 }
 .shop .inner .wrapper .category-sidebar .category-menu #category > li ul li a:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #333;
 }
 .shop .inner .wrapper .category-sidebar .category-menu #category > li ul.on {
   display: block;
@@ -811,6 +819,9 @@ a {
     width: 100%;
   }
 }
+.faqs .inner {
+  font-family: "Cormorant Garamond", serif;
+}
 .faqs .inner .faq-wrapper {
   background: #fff;
   text-align: center;
@@ -951,6 +962,140 @@ a {
   color: #fff;
 }
 
+.contact {
+  padding: 0;
+}
+.contact .inner {
+  width: 100%;
+}
+.contact .inner .location {
+  width: 100%;
+}
+.contact .inner .location .location-inner {
+  display: flex;
+  width: 1180px;
+  margin: 0 auto;
+}
+.contact .inner .location .location-inner .location-map-box {
+  width: 45%;
+  padding: 5%;
+}
+.contact .inner .location .location-inner .location-map-box #map {
+  width: 100%;
+  height: 400px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+}
+.contact .inner .location .location-inner .location-map-box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contact .inner .location .location-inner .location-map-box .traffic {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .inner .location .location-inner .location-map-box .traffic li a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  font: bold 12px/40px "맑은 고딕";
+  background: #fff;
+  color: #333;
+  text-align: center;
+  border: 1px solid #555;
+  border-radius: 10px;
+}
+.contact .inner .location .location-inner .location-map-box .traffic li.on a {
+  background: #555;
+  color: #fff;
+}
+.contact .inner .location .location-inner .location-txt-box {
+  width: 45%;
+  padding: 5%;
+}
+.contact .inner .location .location-inner .location-txt-box h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+.contact .inner .location .location-inner .location-txt-box .guide {
+  display: flex;
+}
+.contact .inner .location .location-inner .location-txt-box .guide p {
+  margin-right: 2%;
+}
+.contact .inner .question-form {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #eee;
+}
+.contact .inner .question-form .form-inner {
+  text-align: center;
+  padding: 80px;
+}
+.contact .inner .question-form .form-inner h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.contact .inner .question-form .form-inner p {
+  margin: 20px 0;
+}
+.contact .inner .question-form .form-inner form {
+  margin-top: 20px;
+}
+.contact .inner .question-form .form-inner form input[type=text] {
+  width: 100%;
+  height: 36px;
+  padding-left: 10px;
+  font-family: "Raleway", sans-serif;
+}
+.contact .inner .question-form .form-inner form textarea {
+  width: 100%;
+  padding: 10px 0 0 10px;
+  resize: none;
+  font-family: "Raleway", sans-serif;
+}
+.contact .inner .question-form .form-inner form #checkbox-wrap {
+  position: relative;
+  display: flex;
+}
+.contact .inner .question-form .form-inner form #checkbox-wrap #opt-apply {
+  font-size: 12px;
+  flex: 0.95;
+  padding-left: 10px;
+  color: #aaa;
+}
+.contact .inner .question-form .form-inner form #checkbox-wrap #check {
+  width: 14px;
+  height: 14px;
+  flex: 0.05;
+  accent-color: #064420;
+}
+.contact .inner .question-form .form-inner form #btn-submit {
+  width: 60px;
+  height: 30px;
+  background: #fff;
+  border: 2px solid #064420;
+  border-radius: 6px;
+  color: #064420;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+}
+.contact .inner .question-form .form-inner form #btn-submit:hover {
+  background: #064420;
+  color: #fff;
+}
+
+/* 반응형 */
+/* tablet 구간 */
+@media screen and (max-width: 1179px) {
+  .contact .inner {
+    padding: 0;
+  }
+}
 /* header 영역 */
 #header {
   width: 100%;
@@ -1159,7 +1304,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 #visual .inner {
   width: 1180px;
@@ -1178,7 +1323,7 @@ a {
 }
 #visual .inner p {
   font: 16px/1.4 "arial";
-  color: #888;
+  color: #bbb;
   margin-bottom: 30px;
 }
 #visual .inner a {

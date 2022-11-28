@@ -7,7 +7,10 @@
   <title>CONTACT</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/a9d0d508cd.js" crossorigin="anonymous"></script>
+  <!-- kakao api - 실제 지도를 그리는 Javascript API를 불러오기 -->
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9cd7318fa05bd7c933e9c968cdc8ceb4 "></script>
   <script defer src="js/main.js"></script>
+  <script defer src="js/contact.js"></script>
 </head>
 <body>
   <!-- header -->
@@ -59,7 +62,7 @@
   <!-- // header -->
   
   <!-- section content -->
-  <section class="content">
+  <section class="content contact">
     <div class="sub_vidual">
       <h2 class="sub-title">CONTACT</h2>
       <div class="top-pad">
@@ -68,6 +71,50 @@
     </div>
     <div class="inner">
       <!-- 컨텐츠가 들어가는 부분 -->
+      
+      <!-- section kakao map -->
+      <div class="location">
+        <div id="map"></div>
+
+        <ul class="traffic">
+          <li><a href="#">교통정보 보기</a></li>
+          <li class="on"><a href="#">교통정보 끄기</a></li>
+        </ul>
+
+        <ul class="branch">
+          <li class="on" data-index="0"><a href="#">본점</a></li>
+          <li data-index="1"><a href="#">지점</a></li>
+          <li data-index="2"><a href="#">지점2</a></li>
+        </ul>
+      </div>
+      <!-- // section kakao map -->
+      <!-- section questions form -->
+      <div class="question-form">
+        <div class="form-inner">
+          <h2>ANY QUESTIONS?</h2>
+          <p>We'd love to hear from you!</p>
+          <form action="#">
+            <p>
+              <label for="username"></label>
+              <input type="text" id="username" name="username" placeholder="user name">
+            </p>
+            <p>
+              <label for="useremail"></label>
+              <input type="text" id="useremail" name="useremail" placeholder="e-mail *">
+            </p>
+            <p>
+              <label for="message"></label>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
+            </p>
+            <p id="checkbox-wrap">
+              <label for="check" id="opt-apply">I opt-in to receive marketing and promotional materials</label>
+              <input type="checkbox" name="check" id="check">
+            </p>        
+            <!-- send button -->
+            <input type="submit" value="send" id="btn-submit">
+          </form>
+        </div>
+      </div>
     </div>
   </section>
   <!-- // section content -->
