@@ -400,15 +400,15 @@
 #banner {
   width: 100%; height: 130vh;
   margin: 150px 0;
-  h1 {
-    font: bold 30px/1 'arial';
-    color: #fff;
+  h2 {
+    font: bold 38px/1 'arial';
+    color: #333;
     text-align: center;
     margin-bottom: 30px;
   }
   p {
     font: 16px/1.3 'arial';
-    color: #ddd;
+    color: #333;
     text-align: center;
   }
   .wrap {
@@ -433,11 +433,11 @@
         }
         p {
           position: absolute;
-          width: 240px;
+          width: 280px;
           left: 50%; bottom: -50px;
           transform: translateX(-50%);
           padding: 20px;
-          background: beige;
+          background: #fff;
           color: #000;
         }
         &:nth-of-type(1) {
@@ -462,6 +462,7 @@
 
 #testimonials {
   width: 100%;
+  padding-top: 100px;
   .inner {
     width: 1180px;
     margin: 0 auto;
@@ -475,8 +476,7 @@
         width: 50%; height: 400px;
         float: left;
         padding: 6%;
-
-
+        font-family: "Raleway", sans-serif;
         .profile {
           .pic {
             width: 100px; height: 100px;
@@ -493,7 +493,7 @@
           }
           p {
             margin-bottom: 10px;
-            line-height: 24px;
+            line-height: 20px;
           }
         }
         
@@ -669,7 +669,6 @@
               padding: 20px;
             }
           }
-
         }
         article {
           &:nth-of-type(1),
@@ -689,6 +688,14 @@
             display: none;
           }
         }
+      }
+    }
+  }
+  // banner 
+  #banner {
+    .wrap {
+      .inner {
+        width: 60%;
       }
     }
   }
@@ -723,6 +730,7 @@
       .brand-logos {
         i {
           font-size: 60px;
+          margin-right: 80px;
         }
       }
     }
@@ -767,6 +775,26 @@
             margin: 30px;
             margin-top: 0;
           }
+        }
+      }
+    }
+  }
+  // banner
+  #banner {
+    .wrap {
+      .inner {
+        width: 100%;
+      }
+    }
+  }
+
+  // featured in tablet
+  #featured {
+    .inner {
+      .brand-logos {
+        i {
+          font-size: 50px;
+          margin-right: 40px;
         }
       }
     }
