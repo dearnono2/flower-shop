@@ -398,7 +398,7 @@
 
 /* section - banner 영역 */
 #banner {
-  width: 100%; height: 130vh;
+  width: 100%; height: 150vh;
   margin: 150px 0;
   h2 {
     font: bold 38px/1 'arial';
@@ -407,10 +407,15 @@
     margin-bottom: 30px;
   }
   > p {
+    width: 80%;
     font: 16px/1.3 'arial';
     color: #333;
     text-align: center;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
+    border: 1px solid #333;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
   }
   .wrap {
     background: url(../img/banner.jpg) no-repeat center/cover fixed;
