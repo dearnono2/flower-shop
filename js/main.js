@@ -1,4 +1,4 @@
-// 변수 설정
+/* section - header - menubar 영역 */
 
 const btnCall = document.querySelector(".btnCall");
 const menuMo = document.querySelector(".menuMo");
@@ -16,6 +16,9 @@ btnCall.onclick = function(e) {
   menuMo.classList.toggle("on");
 }
 
+/* // section - header - menubar 영역 */
+
+
 
 /* section - banner 영역 */
 const banner = document.querySelector('#banner');
@@ -23,9 +26,8 @@ const wrapitems = banner.querySelector('.wrap');
 const item = banner.querySelectorAll('.item');
 
 
-
 window.addEventListener('scroll', (e) => {
-  console.log(window.scrollY);
+  // console.log(window.scrollY);
   if(window.scrollY > 1750) {
     item[0].classList.add('show');
   } else if (window.scrollY > 2450) {
@@ -44,3 +46,5 @@ window.addEventListener('scroll', (e) => {
     item[2].classList.remove('show');
   }
 })
+
+/* // section - banner 영역 */
