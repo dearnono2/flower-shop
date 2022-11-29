@@ -1479,11 +1479,6 @@ a {
 #brand .inner .wrap {
   width: 100%;
   position: relative;
-}
-#brand .inner .wrap .brand-centertext-mobile {
-  display: none;
-}
-#brand .inner .wrap article {
   /* 다섯번째 (가운데 텍스트 부분) brand article */
 }
 #brand .inner .wrap article:nth-of-type(1), #brand .inner .wrap article:nth-of-type(2), #brand .inner .wrap article:nth-of-type(3), #brand .inner .wrap article:nth-of-type(4) {
@@ -1563,7 +1558,7 @@ a {
 #brand .inner .wrap article:nth-of-type(1):hover .pic::after, #brand .inner .wrap article:nth-of-type(2):hover .pic::after, #brand .inner .wrap article:nth-of-type(3):hover .pic::after, #brand .inner .wrap article:nth-of-type(4):hover .pic::after {
   opacity: 1;
 }
-#brand .inner .wrap article:nth-of-type(5) {
+#brand .inner .wrap .brand-centertext {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1575,7 +1570,7 @@ a {
   padding: 20px;
   text-align: center;
 }
-#brand .inner .wrap article:nth-of-type(5) p {
+#brand .inner .wrap .brand-centertext p {
   font-size: 26px;
   color: #333;
   margin-bottom: 30px;
@@ -1831,37 +1826,12 @@ a {
   }
   #brand .inner .wrap {
     width: 100%;
-    height: 1740px;
     display: flex;
     flex-wrap: wrap;
   }
-  #brand .inner .wrap .brand-centertext-mobile {
-    position: sticky;
-    display: block;
-    top: 0;
-    width: 100%;
-    z-index: 3;
-  }
-  #brand .inner .wrap .brand-centertext-mobile .brand-centertext {
-    position: absolute;
-    top: 30px;
-    right: 8%;
-    width: 30%;
-    height: 220px;
-    text-align: center;
-    transform: none;
-    margin-bottom: 120px;
-  }
-  #brand .inner .wrap .brand-centertext-mobile .brand-centertext p {
-    font-size: 26px;
-    color: #333;
-    margin-bottom: 30px;
-    background-color: #F0F2B6;
-    padding: 20px;
-  }
   #brand .inner .wrap article:nth-of-type(1), #brand .inner .wrap article:nth-of-type(2), #brand .inner .wrap article:nth-of-type(3), #brand .inner .wrap article:nth-of-type(4) {
-    margin-left: 30px;
-    margin-top: 30px;
+    width: 45%;
+    margin: 2%;
   }
   #brand .inner .wrap article:nth-of-type(1) h3, #brand .inner .wrap article:nth-of-type(2) h3, #brand .inner .wrap article:nth-of-type(3) h3, #brand .inner .wrap article:nth-of-type(4) h3 {
     font-size: 24px;
@@ -1871,6 +1841,9 @@ a {
     font-size: 24px;
   }
   #brand .inner .wrap article:nth-of-type(5) {
+    display: none;
+  }
+  #brand .inner .wrap .brand-centertext {
     display: none;
   }
   #banner .wrap .inner {
@@ -1913,9 +1886,6 @@ a {
 @media screen and (max-width: 539px) {
   #brand {
     padding-bottom: 60px;
-  }
-  #brand .inner .wrap .brand-centertext-mobile {
-    display: none;
   }
   #brand .inner .wrap article:nth-of-type(1), #brand .inner .wrap article:nth-of-type(2), #brand .inner .wrap article:nth-of-type(3), #brand .inner .wrap article:nth-of-type(4) {
     width: 100%;

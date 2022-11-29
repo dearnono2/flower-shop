@@ -277,11 +277,6 @@
     .wrap {
       width: 100%;
       position: relative;
-
-      // 모바일에 sticky 요소를 넣기위해 만든것. 
-      .brand-centertext-mobile {
-        display: none;
-      }
       article {
         // 연습
         &:nth-of-type(1),
@@ -360,24 +355,23 @@
             }
           }
         }
-        
-        /* 다섯번째 (가운데 텍스트 부분) brand article */
-        &:nth-of-type(5) {
-          position: absolute;
-          top: 50%; left: 50%;
-          transform: translate(-50%,-50%);
-          width: 260px; height: 220px;
-          background-color: #F0F2B6;
-          z-index: 3;
-          padding: 20px;
-          // padding: 170px 50px 0;
-          text-align: center;
-          // border: 2px solid #333;
-          p {
-            font-size: 26px;
-            color: #333;
-            margin-bottom: 30px;
-          }
+      }
+      /* 다섯번째 (가운데 텍스트 부분) brand article */
+      .brand-centertext {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+        width: 260px; height: 220px;
+        background-color: #F0F2B6;
+        z-index: 3;
+        padding: 20px;
+        // padding: 170px 50px 0;
+        text-align: center;
+        // border: 2px solid #333;
+        p {
+          font-size: 26px;
+          color: #333;
+          margin-bottom: 30px;
         }
       }
     }
@@ -639,39 +633,16 @@
     .inner {
       width: 100%;
       .wrap {
-        width: 100%; height: 1740px;
+        width: 100%; 
         display: flex;
         flex-wrap: wrap;
-        // 반응형에서만 나타나는 sticky 요소
-        .brand-centertext-mobile {
-          position: sticky;
-          display: block;
-          top: 0;
-          width: 100%;
-          z-index: 3;
-          .brand-centertext {
-            position: absolute;
-            top: 30px; right: 8%;
-            width: 30%; height: 220px;
-            text-align: center;
-            transform: none;
-            margin-bottom: 120px;
-            p {
-              font-size: 26px;
-              color: #333;
-              margin-bottom: 30px;
-              background-color: #F0F2B6;
-              padding: 20px;
-            }
-          }
-        }
         article {
           &:nth-of-type(1),
           &:nth-of-type(2),
           &:nth-of-type(3),
           &:nth-of-type(4) {
-            margin-left: 30px;
-            margin-top: 30px;
+            width: 45%;
+            margin: 2%;
             h3 {
               font-size: 24px;
             }
@@ -686,6 +657,9 @@
           &:nth-of-type(5) {
             display: none;
           }
+        }
+        .brand-centertext {
+          display: none;
         }
       }
     }
@@ -752,9 +726,6 @@
     padding-bottom: 60px;
     .inner {
       .wrap {
-        .brand-centertext-mobile {
-          display: none;
-        }
         article {
           &:nth-of-type(1),
           &:nth-of-type(2),
