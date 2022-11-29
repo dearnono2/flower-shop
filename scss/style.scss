@@ -270,8 +270,8 @@
     position: relative;
 
 
-    h1 {
-      font-size: 34px;
+    h2 {
+      font: normal 50px/1 "Cormorant Garamond", serif;
       text-align: center;
       margin-bottom: 50px;
     }
@@ -293,7 +293,7 @@
 
     .slider-wrapper {
       position: relative;
-      width: 1200px; height: 320px;
+      width: 1200px; height: 360px;
       overflow: hidden;
       
       .wrap-imgs {
@@ -325,16 +325,23 @@
               transform: scale(1.1);
             }
           }
-          h2 {
+          h3 {
             margin-top: 10px;
+            font: normal 20px/1 "Cormorant Garamond", serif;
+            font-weight: 600;
             a {
-              font-size: 20px;
-              font-family: 'Cormorant Garamond', serif;
               color: #333;
             }
           }
           p {
+            display: inline-block;
+            font-size: 12px;
+            margin-top: 10px;
             margin-bottom: 10px;
+            color: #333;
+            background: #f8d56b;
+            padding: 3px 8px;
+            border-radius: 5px;
           }
         }
       }
@@ -463,7 +470,7 @@
 
 /* section - banner 영역 */
 #banner {
-  width: 100%; height: 150vh;
+  width: 100%; 
   margin: 150px 0;
   h2 {
     font: bold 38px/1 'arial';
@@ -492,19 +499,25 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      width: 30%; height: 100%;
+      width: 50%; height: 100%;
       margin: 0 auto;
+      padding: 100px 0;
       background: #eee;
       .item {
         position: relative;
-        width: 380px;
+        width: 500px;
         transform: translateX(-300%);
         transition: transform 0.4s ease;
+        margin: 80px 0;
+        &:nth-of-type(1) {
+          margin-top: 30px;
+        }
         &:nth-of-type(2) {
           transform: translateX(300%);
         }
         img {
           width: 100%; height: 100%;
+          border-radius: 20%;
         }
         .item-txt {
           position: absolute;
@@ -753,6 +766,9 @@
     .wrap {
       .inner {
         width: 60%;
+        .item {
+          width: 460px;
+        }
       }
     }
   }
@@ -828,6 +844,12 @@
     .wrap {
       .inner {
         width: 100%;
+        .item {
+          width: 90%;
+          .item-txt {
+            width: 80%;
+          }
+        }
       }
     }
   }
