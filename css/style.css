@@ -1450,7 +1450,7 @@ a {
 }
 #brand .inner h2 {
   font-size: 40px;
-  color: #555;
+  color: #333;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -1484,13 +1484,18 @@ a {
   color: #fff;
   font-family: "Raleway", sans-serif;
   text-align: center;
+  z-index: 3;
 }
-#brand .inner .wrap article:nth-of-type(1) img, #brand .inner .wrap article:nth-of-type(2) img, #brand .inner .wrap article:nth-of-type(3) img, #brand .inner .wrap article:nth-of-type(4) img {
+#brand .inner .wrap article:nth-of-type(1) .pic, #brand .inner .wrap article:nth-of-type(2) .pic, #brand .inner .wrap article:nth-of-type(3) .pic, #brand .inner .wrap article:nth-of-type(4) .pic {
+  width: 100%;
+  height: 100%;
+}
+#brand .inner .wrap article:nth-of-type(1) .pic img, #brand .inner .wrap article:nth-of-type(2) .pic img, #brand .inner .wrap article:nth-of-type(3) .pic img, #brand .inner .wrap article:nth-of-type(4) .pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#brand .inner .wrap article:nth-of-type(1)::before, #brand .inner .wrap article:nth-of-type(2)::before, #brand .inner .wrap article:nth-of-type(3)::before, #brand .inner .wrap article:nth-of-type(4)::before {
+#brand .inner .wrap article:nth-of-type(1) .pic::before, #brand .inner .wrap article:nth-of-type(2) .pic::before, #brand .inner .wrap article:nth-of-type(3) .pic::before, #brand .inner .wrap article:nth-of-type(4) .pic::before {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1504,7 +1509,7 @@ a {
   border: 3px solid #fff;
   transition: 0.5s;
 }
-#brand .inner .wrap article:nth-of-type(1)::after, #brand .inner .wrap article:nth-of-type(2)::after, #brand .inner .wrap article:nth-of-type(3)::after, #brand .inner .wrap article:nth-of-type(4)::after {
+#brand .inner .wrap article:nth-of-type(1) .pic::after, #brand .inner .wrap article:nth-of-type(2) .pic::after, #brand .inner .wrap article:nth-of-type(3) .pic::after, #brand .inner .wrap article:nth-of-type(4) .pic::after {
   content: "";
   display: block;
   width: 100%;
@@ -1516,16 +1521,24 @@ a {
   opacity: 0;
   transition: 0.5s;
 }
-#brand .inner .wrap article:nth-of-type(1):hover h3, #brand .inner .wrap article:nth-of-type(2):hover h3, #brand .inner .wrap article:nth-of-type(3):hover h3, #brand .inner .wrap article:nth-of-type(4):hover h3 {
-  opacity: 1;
-  text-shadow: 5px 10px 6px rgba(0, 0, 0, 0.2), 0px -3px 20px rgba(255, 255, 255, 0.4);
-}
-#brand .inner .wrap article:nth-of-type(1):hover::before, #brand .inner .wrap article:nth-of-type(2):hover::before, #brand .inner .wrap article:nth-of-type(3):hover::before, #brand .inner .wrap article:nth-of-type(4):hover::before {
+#brand .inner .wrap article:nth-of-type(1) .pic:hover::before, #brand .inner .wrap article:nth-of-type(2) .pic:hover::before, #brand .inner .wrap article:nth-of-type(3) .pic:hover::before, #brand .inner .wrap article:nth-of-type(4) .pic:hover::before {
   opacity: 1;
   width: 80%;
   height: 80%;
 }
-#brand .inner .wrap article:nth-of-type(1):hover::after, #brand .inner .wrap article:nth-of-type(2):hover::after, #brand .inner .wrap article:nth-of-type(3):hover::after, #brand .inner .wrap article:nth-of-type(4):hover::after {
+#brand .inner .wrap article:nth-of-type(1) .pic:hover::after, #brand .inner .wrap article:nth-of-type(2) .pic:hover::after, #brand .inner .wrap article:nth-of-type(3) .pic:hover::after, #brand .inner .wrap article:nth-of-type(4) .pic:hover::after {
+  opacity: 1;
+}
+#brand .inner .wrap article:nth-of-type(1):hover h3, #brand .inner .wrap article:nth-of-type(2):hover h3, #brand .inner .wrap article:nth-of-type(3):hover h3, #brand .inner .wrap article:nth-of-type(4):hover h3 {
+  opacity: 1;
+  text-shadow: 5px 10px 6px rgba(0, 0, 0, 0.2), 0px -3px 20px rgba(255, 255, 255, 0.4);
+}
+#brand .inner .wrap article:nth-of-type(1):hover .pic::before, #brand .inner .wrap article:nth-of-type(2):hover .pic::before, #brand .inner .wrap article:nth-of-type(3):hover .pic::before, #brand .inner .wrap article:nth-of-type(4):hover .pic::before {
+  opacity: 1;
+  width: 80%;
+  height: 80%;
+}
+#brand .inner .wrap article:nth-of-type(1):hover .pic::after, #brand .inner .wrap article:nth-of-type(2):hover .pic::after, #brand .inner .wrap article:nth-of-type(3):hover .pic::after, #brand .inner .wrap article:nth-of-type(4):hover .pic::after {
   opacity: 1;
 }
 #brand .inner .wrap article:nth-of-type(5) {
@@ -1825,12 +1838,13 @@ a {
     padding: 20px;
   }
   #brand .inner .wrap article:nth-of-type(1), #brand .inner .wrap article:nth-of-type(2), #brand .inner .wrap article:nth-of-type(3), #brand .inner .wrap article:nth-of-type(4) {
-    width: 50%;
-    height: 400px;
     margin-left: 30px;
     margin-top: 30px;
   }
-  #brand .inner .wrap article:nth-of-type(1)::after, #brand .inner .wrap article:nth-of-type(2)::after, #brand .inner .wrap article:nth-of-type(3)::after, #brand .inner .wrap article:nth-of-type(4)::after {
+  #brand .inner .wrap article:nth-of-type(1) h3, #brand .inner .wrap article:nth-of-type(2) h3, #brand .inner .wrap article:nth-of-type(3) h3, #brand .inner .wrap article:nth-of-type(4) h3 {
+    font-size: 24px;
+  }
+  #brand .inner .wrap article:nth-of-type(1) .pic::after, #brand .inner .wrap article:nth-of-type(2) .pic::after, #brand .inner .wrap article:nth-of-type(3) .pic::after, #brand .inner .wrap article:nth-of-type(4) .pic::after {
     opacity: 1;
     font-size: 24px;
   }
@@ -1842,6 +1856,7 @@ a {
   }
   #testimonials .inner {
     width: 100%;
+    margin-top: 80px;
   }
   #testimonials .inner .testimonials-wrap h2 {
     margin-bottom: 80px;
@@ -1874,6 +1889,9 @@ a {
 }
 /* mobile 구간 */
 @media screen and (max-width: 539px) {
+  #brand {
+    padding-bottom: 60px;
+  }
   #brand .inner .wrap .brand-centertext-mobile {
     display: none;
   }
@@ -1881,6 +1899,9 @@ a {
     width: 100%;
     margin: 30px;
     margin-top: 0;
+  }
+  #brand .inner .wrap article:nth-of-type(1) h3, #brand .inner .wrap article:nth-of-type(2) h3, #brand .inner .wrap article:nth-of-type(3) h3, #brand .inner .wrap article:nth-of-type(4) h3 {
+    opacity: 1;
   }
   #banner .wrap .inner {
     width: 100%;

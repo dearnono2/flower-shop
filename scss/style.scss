@@ -270,7 +270,7 @@
     position: relative;
     h2 {
       font-size: 40px;
-      color: #555;
+      color: #333;
       text-align: center;
       margin-bottom: 50px;
     }
@@ -304,44 +304,59 @@
             color: #fff;
             font-family: "Raleway", sans-serif;
             text-align: center;
+            z-index: 3;
           }
-          img {
+          .pic {
             width: 100%; height: 100%;
-            object-fit: cover;
-          }
-          &::before {
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%,-50%);
-            display: block;
-            content: '';
-            text-align: center;
-            font-size: 0;
-            width: 100%; height: 100%;
-            border: 3px solid #fff;
-            transition: 0.5s;
-          }
-          &::after {
-            content: '';
-            display: block;
-            width: 100%; height: 100%;
-            position: absolute;
-            top: 0; left: 0;
-            background: linear-gradient(45deg, rgba(255, 192, 203, 0.4), rgba(173, 216, 230, 0.4));
-            opacity: 0;
-            transition: 0.5s;
+            img {
+              width: 100%; height: 100%;
+              object-fit: cover;
+            }
+            &::before {
+              position: absolute;
+              top: 50%; left: 50%;
+              transform: translate(-50%,-50%);
+              display: block;
+              content: '';
+              text-align: center;
+              font-size: 0;
+              width: 100%; height: 100%;
+              border: 3px solid #fff;
+              transition: 0.5s;
+            }
+            &::after {
+              content: '';
+              display: block;
+              width: 100%; height: 100%;
+              position: absolute;
+              top: 0; left: 0;
+              background: linear-gradient(45deg, rgba(255, 192, 203, 0.4), rgba(173, 216, 230, 0.4));
+              opacity: 0;
+              transition: 0.5s;
+            }
+            &:hover {
+              &::before {
+                opacity: 1;
+                width: 80%; height: 80%;
+              }
+              &::after {
+                opacity: 1;
+              }
+            }
           }
           &:hover {
             h3 {
               opacity: 1;
               text-shadow: 5px 10px 6px rgba(0, 0, 0, 0.2), 0px -3px 20px rgba(255,255,255,0.4);
             }
-            &::before {
-              opacity: 1;
-              width: 80%; height: 80%;
-            }
-            &::after {
-              opacity: 1;
+            .pic {
+              &::before {
+                opacity: 1;
+                width: 80%; height: 80%;
+              }
+              &::after {
+                opacity: 1;
+              }
             }
           }
         }
@@ -655,12 +670,16 @@
           &:nth-of-type(2),
           &:nth-of-type(3),
           &:nth-of-type(4) {
-            width: 50%; height: 400px;
             margin-left: 30px;
             margin-top: 30px;
-            &::after {
-              opacity: 1;
+            h3 {
               font-size: 24px;
+            }
+            .pic {
+              &::after {
+                opacity: 1;
+                font-size: 24px;
+              }
             }
           }
           // brand article 가운데에 위치한 텍스트. 반응형에서는 숨김처리.
@@ -683,6 +702,7 @@
   #testimonials {
     .inner {
       width: 100%;
+      margin-top: 80px;
       .testimonials-wrap {
         h2 {
           margin-bottom: 80px;
@@ -729,6 +749,7 @@
 @media screen and (max-width:539px) {
   // brand
   #brand {
+    padding-bottom: 60px;
     .inner {
       .wrap {
         .brand-centertext-mobile {
@@ -742,6 +763,9 @@
             width: 100%;
             margin: 30px;
             margin-top: 0;
+            h3 {
+              opacity: 1;
+            }
           }
         }
       }
