@@ -20,6 +20,84 @@ btnCall.onclick = function(e) {
 
 
 
+/* section - new arrival 영역 */
+
+const wrap = document.querySelector('.slider-wrapper');
+const wrapImgs = wrap.querySelector('.wrap-imgs');
+const articles = wrap.querySelectorAll('article');
+
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+
+let len = articles.length;
+
+let enableClick = true;
+
+init();
+
+prev.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  if(enableClick) {
+    enableClick = false;
+
+    prevSlide();
+  }
+})
+
+next.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  if(enableClick) {
+    enableClick = false;
+
+    nextSlide();
+  }
+})
+
+// 초기화 함수
+function init() {
+  wrapImgs.style.left = '-300px';
+
+  wrapImgs.prepend(wrapImgs.lastElementChild);
+
+  wrapImgs.style.width = `${300 * len}px`;
+  articles.forEach((el) => {
+    el.style.width = `${1800 / len}px`;
+  })
+}
+
+function prevSlide() {
+  new Anim(wrapImgs, {
+    prop : 'left',
+    value: 0,
+    duration : 500,
+    callback : () => {
+      wrapImgs.style.left = '-300px';
+      wrapImgs.prepend(wrapImgs.lastElementChild);
+      enableClick = true;
+    }
+  })
+}
+
+function nextSlide() {
+  new Anim(wrapImgs, {
+    prop : 'left',
+    value: -600,
+    duration : 500,
+    callback : () => {
+      wrapImgs.style.left = '-300px';
+      wrapImgs.append(wrapImgs.firstElementChild);
+      enableClick = true;
+    }
+  })
+}
+
+/* // section - new arrival 영역 */
+
+
+
 /* section - banner 영역 */
 const banner = document.querySelector('#banner');
 const wrapitems = banner.querySelector('.wrap');
@@ -28,21 +106,21 @@ const item = banner.querySelectorAll('.item');
 
 window.addEventListener('scroll', (e) => {
   // console.log(window.scrollY);
-  if(window.scrollY > 1750) {
+  if(window.scrollY > 2500) {
     item[0].classList.add('show');
   } else if (window.scrollY > 2450) {
     item[0].classList.remove('show');
   }
 
-  if(window.scrollY > 2150) {
+  if(window.scrollY > 2900) {
     item[1].classList.add('show');
   } else if (window.scrollY > 2850) {
     item[1].classList.remove('show');
   }
 
-  if(window.scrollY > 2600) {
+  if(window.scrollY > 3300) {
     item[2].classList.add('show');
-  } else if (window.scrollY > 3300) {
+  } else if (window.scrollY > 3250) {
     item[2].classList.remove('show');
   }
 })

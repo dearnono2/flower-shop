@@ -6,7 +6,7 @@
     .location {
       width: 1180px;
       margin: 0 auto;
-      margin-bottom: 180px;
+      margin-bottom: 120px;
       h2 {
         text-align: center;
       }
@@ -21,7 +21,7 @@
       }
       .guide {
         width: 100%;
-        margin: 50px 0 50px;
+        margin: 50px 0 20px;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -68,23 +68,24 @@
     // kakao map section
     // 위치, 지도 영역
     .kakao-map {
-      width: 100%; height: 300px;
+      width: 100%; height: 350px;
       #map {
         width: 100%; height: 100%;
         // border: 1px solid #000;
-        margin-bottom: 20px;
+        
       }
-      .map-zoomable {
-        width: 240px; height: 100px;
-        margin-left: 20px;
-        button {
-          margin-top: 10px;
-          padding: 4px;
-          background: #eee;
-          border: 1px solid #333;
-          border-radius: 6px;
-        }
-      }
+      // 카카오 지도 zoom 가능 버튼
+      // .map-zoomable {
+      //   width: 240px; height: 100px;
+      //   margin-left: 20px;
+      //   button {
+      //     margin-top: 10px;
+      //     padding: 4px;
+      //     background: #eee;
+      //     border: 1px solid #333;
+      //     border-radius: 6px;
+      //   }
+      // }
       &::after {
         content: '';
         display: block;

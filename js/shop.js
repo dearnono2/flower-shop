@@ -22,10 +22,14 @@ categoryListNum(1);
 
 const productsItemsWrap = document.querySelector('.products-items-wrap');
 
+
+
 // dummy 이미지 주소
 {/* <img src="https://via.placeholder.com/300" alt=""></img> */}
 
 for(let i = 1; i <= 12; i++) {
+  const randomPrice = Math.floor((Math.random() * 100) + 20);
+
   // 판매 상품 반복 
   const products = `                
   <div class="item">
@@ -35,7 +39,8 @@ for(let i = 1; i <= 12; i++) {
     </div>
     <div class="txt">
       <p><b>PRODUCT${i}</b></p>
-      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet</p>
+      <p class="price">${randomPrice}$</p>
     </div>
   </div>
   `;
