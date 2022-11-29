@@ -1061,6 +1061,7 @@ a {
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
 }
 .contact .inner .location .guide .guide-detail {
   width: 40%;
@@ -1091,7 +1092,11 @@ a {
   font-family: "Raleway", sans-serif;
   margin: 30px 0;
 }
-.contact .inner .location .guide .guide-contact p:nth-of-type(2), .contact .inner .location .guide .guide-contact p:nth-of-type(3) {
+.contact .inner .location .guide .guide-contact p:nth-of-type(2) {
+  font-weight: 600;
+  margin-top: 40px;
+}
+.contact .inner .location .guide .guide-contact p:nth-of-type(3) {
   font-weight: 600;
 }
 .contact .inner .kakao-map {
@@ -1191,6 +1196,23 @@ a {
 @media screen and (max-width: 1179px) {
   .contact .inner {
     padding: 0;
+  }
+  .contact .inner .location {
+    width: 100%;
+  }
+  .contact .inner .location .pic {
+    width: 90%;
+    height: 100%;
+  }
+  .contact .inner .location .guide .guide-detail {
+    width: 100%;
+    border-right: none;
+  }
+  .contact .inner .location .guide .guide-contact {
+    width: 100%;
+  }
+  .contact .inner .location .guide .guide-contact h3 {
+    margin-top: 50px;
   }
 }
 /* header 영역 */
