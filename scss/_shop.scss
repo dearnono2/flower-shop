@@ -129,7 +129,7 @@
                       cursor: pointer;
                     }
                     &.price {
-                      transform: translateY(30px);
+                      transform: translateY(20px);
                       opacity: 0;
                       color: #907749;
                     }
@@ -242,7 +242,7 @@
             .products-middle {
               .products-items-wrap {
                 .item {
-                  width: 45%;
+                  width: 45%; height: 100%;
                 }
               }
             }
