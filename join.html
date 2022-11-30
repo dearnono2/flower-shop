@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/a9d0d508cd.js" crossorigin="anonymous"></script>
+  <script defer src="js/join.js"></script>
+</head>
+<body>
+  <!-- header -->
+  <header id="header_sub">
+    <div class="inner">
+      <h1 class="logo">
+        <a href="index.html">
+          <span>Flower Shop</span>
+        </a>
+      </h1>
+      <!-- 웹 메뉴 -->
+      <nav class="menuWeb">
+        <ul class="util">
+          <li><a href="join.html">SIGN UP <i class="fa-solid fa-right-to-bracket"></i></a></li>
+          <li><a href="">CART <i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li><a href="">SEARCH <i class="fa-solid fa-magnifying-glass"></i></a></li>
+        </ul>
+        <!-- global navigation bar -->
+        <ul id="gnb">
+          <li><a href="index.html" data-hover="HOME">HOME</a></li>
+          <li><a href="shop.html" data-hover="SHOP">SHOP</a></li>
+          <li><a href="about.html" data-hover="ABOUT">ABOUT</a></li>
+          <li><a href="faqs.html" data-hover="FAQS">FAQS</a></li>
+          <li><a href="contact.html" data-hover="CONTACT">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- 반응형 모바일 메뉴 -->
+      <a href="#" class="btnCall">
+        <span>메뉴호출</span>
+      </a>
+
+      <nav class="menuMo">
+        <h1>
+          <a href="#">FLOWER SHOP</a>
+          <span>BLOOM WHERE YOU ARE</span>
+        </h1>
+
+        <ul id="gnbMo">
+          <li><a href="index.html" data-hover="HOME">HOME</a></li>
+          <li><a href="shop.html" data-hover="SHOP">SHOP</a></li>
+          <li><a href="about.html" data-hover="ABOUT">ABOUT</a></li>
+          <li><a href="faqs.html" data-hover="FAQS">FAQS</a></li>
+          <li><a href="contact.html" data-hover="CONTACT">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- // header -->
+  
+  <!-- section content -->
+  <section class="content join">
+    <div class="sub_vidual">
+      <h2 class="sub-title">FLOWER SHOP MEMBERSHIP SERVICE</h2>
+      <div class="top-pad">
+        <img src="img/sub4.png" alt="top pad background image">
+      </div>
+    </div>
+    <div class="inner">
+      <!-- 컨텐츠가 들어가는 부분 -->
+
+          <h2>SIGN UP</h2>
+    
+          <!-- form action에는 전송하는 페이지의 링크를 작성. -->
+          <form action="result.html" method="get" id="member">
+            <fieldset>
+              <legend class="hidden">회원가입 폼 입력 양식</legend>
+    
+              <table>
+                <caption class="hidden">회원가입을 위한 아이디, 비밀번호, 이메일, 성별, 학력, 취미, 남기는 말 입력테이블</caption>
+    
+                <tbody>
+                  <!-- user Id -->
+    
+                  <tr>
+                    <th><label for="userid">User Id</label></th>
+                    <td>
+                      <input type="text" name="userid" id="userid" placeholder="Enter id">
+                    </td>
+                  </tr>
+    
+                  <!-- password -->
+                  <tr>
+                    <th scope="row">
+                      <label for="pwd1">Password</label>
+                    </th>
+                    <td>
+                      <input type="password" name="pwd1" id="pwd1" placeholder="Enter password">
+                    </td>
+                  </tr>
+    
+                  <tr>
+                    <th scope="row">
+                      <label for="pwd1">Re Password</label>
+                    </th>
+                    <td>
+                      <input type="password" name="pwd2" id="pwd2" placeholder="Reenter your password">
+                    </td>
+                  </tr>
+    
+                  <!-- email -->
+                  <tr>
+                    <th scope="row"><label for="email">E-mail</label></th>
+                    <td>
+                      <input type="text" name="email" placeholder="example@mail.com">
+                    </td>
+                  </tr>
+                  <!-- education -->
+                  <tr>
+                    <th scope="row"><label for="edu">Education</label></th>
+                    <td>
+                      <select name="edu" id="edu">
+                        <option value="elementary">초등학교 졸업</option>
+                        <option value="middle">중학교 졸업</option>
+                        <option value="high">고등학교 졸업</option>
+                        <option value="college">대학교 졸업</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <!-- gender -->
+                  <tr>
+                    <th scope="row">Gender</th>
+                    <td>
+                      <label for="male">Male</label>
+                      <input type="radio" name="gender" id="male">
+                      <label for="female">Male</label>
+                      <input type="radio" name="gender" id="female">
+                    </td>
+                  </tr>
+                  <!-- interest -->
+                  <tr>
+                    <th scope="row">Interests</th>
+                    <td>
+                      <label for="sports">Sports</label>
+                      <input type="checkbox" name="hobby" id="sports" value="sports">
+    
+                      <label for="music">Music</label>
+                      <input type="checkbox" name="hobby" id="music" value="music">
+    
+                      <label for="game">Game</label>
+                      <input type="checkbox" name="hobby" id="game" value="game">
+    
+                      <label for="reading">Reading</label>
+                      <input type="checkbox" name="hobby" id="reading" value="reading">
+                    </td>
+                  </tr>
+                  <!-- comments -->
+                  <tr>
+                    <th scope="row"><label for="comments">Comments</label></th>
+                    <td>
+                      <textarea name="comments" id="comments" placeholder="Leave some comments"></textarea>
+                    </td>
+                  </tr>
+    
+                  <tr>
+                    <th colspan="2">
+                      <input type="reset" value="cancel">
+                      <input type="submit" value="submit">
+                    </th>
+                  </tr>
+                </tbody>
+              </table>
+            </fieldset>
+          </form>
+        </div>
+  </section>
+    <!-- // section content -->
+
+  <!-- footer -->
+  <footer id="footer_sub">
+    <div class="inner">
+      <h2>FLOWER SHOP</h2>
+      <ul>
+        <li><a href="#">Policy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Customer</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+
+      <!-- address -->
+      <address>
+        address : Lorem ipsum dolor sit amet consectetur. <br/>
+        Tel : +82-2-2100-2114 FAX : +82-2-2100-7999
+      </address>
+      <!-- // address -->
+
+      <p>Copyright &copy; 2022 FLOWER SHOP ALL Right reserved.</p>
+    </div>
+  </footer>
+  <!-- // footer -->
+  
+</body>
+</html>

@@ -64,7 +64,7 @@ function init() {
 
   wrapImgs.style.width = `${300 * len}px`;
   articles.forEach((el) => {
-    el.style.width = `${1800 / len}px`;
+    el.style.width = `${1900 / len}px`;
   })
 }
 

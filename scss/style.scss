@@ -6,6 +6,8 @@
 // sub pages
 @import 'sub_page.scss';
 
+@import 'join.scss';
+
 @import 'about.scss';
 @import 'shop.scss';
 @import 'faqs.scss';
@@ -277,18 +279,22 @@
     }
 
     // slider 버튼
-    i {
-      position: absolute;
-      font-size: 50px;
-      color: #555;
-      top: 0;
-      cursor: pointer;
-    }
-    .fa-angle-left {
-    top: 0; left: 0;
-    }
-    .fa-angle-right {
-    top: 0; right: 0;
+    .slider-btn {
+      text-align: center;
+      margin-bottom: 50px;
+      i {
+        // position: absolute;
+        font-size: 50px;
+        color: #555;
+        top: 0;
+        cursor: pointer;
+      }
+      .fa-angle-left {
+        margin-right: 50px;
+      }
+      .fa-angle-right {
+        margin-left: 50px;
+      }
     }
 
     .slider-wrapper {
@@ -304,7 +310,7 @@
         // transition: 0.5s;
         
         article {
-          flex: 1;
+          // flex: 1;
           // float: left;
           width: 250px;
           margin: 0 25px;
@@ -359,7 +365,7 @@
     margin: 0 auto;
     position: relative;
     h2 {
-      font: normal 40px/1 "Cormorant Garamond", serif;
+      font-size: 40px;
       color: #333;
       text-align: center;
       margin-bottom: 50px;
@@ -473,7 +479,7 @@
   width: 100%; 
   margin: 150px 0;
   h2 {
-    font: normal 40px/1 "Cormorant Garamond", serif;
+    font: bold 38px/1 'arial';
     color: #333;
     text-align: center;
     margin-bottom: 30px;
@@ -499,11 +505,10 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      width: 40%; height: 100%;
+      width: 50%; height: 100%;
       margin: 0 auto;
       padding: 100px 0;
       background: #eee;
-      // background: url(../img/inner2.jpg) no-repeat center/cover fixed;
       .item {
         position: relative;
         width: 500px;
@@ -557,12 +562,13 @@
       text-align: center;
       margin: 0 auto 150px;
       h2 {
-        font: normal 30px/1 "Cormorant Garamond", serif;
+        font-size: 30px;
       }
       section {
         width: 50%; height: 400px;
         float: left;
         padding: 6%;
+        font-family: "Raleway", sans-serif;
         .profile {
           .pic {
             width: 100px; height: 100px;
@@ -575,8 +581,7 @@
           }
           h2 {
             font-size: 20px;
-            font-family: "Raleway", sans-serif;
-            margin: 14px 0 6px;
+            margin: 5px 0;
           }
           p {
             margin-bottom: 10px;
@@ -726,6 +731,22 @@
       }
     }
   }
+
+  // new arrival tablet
+  #new-arrival {
+    .inner {
+      width: 100%;
+      .slider-wrapper {
+        width: 600px;
+        margin: 0 auto;
+        .wrap-imgs {
+          article {
+          }
+        }
+      }
+    }
+  }
+
   // brand tablet
   #brand {
     .inner {
@@ -823,6 +844,22 @@
 
 /* mobile 구간 */
 @media screen and (max-width:539px) {
+
+  // new arrival tablet
+  #new-arrival {
+    .inner {
+      width: 100%;
+      .slider-wrapper {
+        width: 300px;
+        margin: 0 auto;
+        .wrap-imgs {
+          article {
+          }
+        }
+      }
+    }
+  }
+
   // brand
   #brand {
     padding-bottom: 60px;

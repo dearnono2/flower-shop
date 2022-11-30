@@ -392,6 +392,107 @@ a {
     margin: 5px;
   }
 }
+.join .inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.join .inner h2 {
+  font: normal 60px/1 "Raleway";
+  color: #555;
+  margin-bottom: 50px;
+}
+.join .inner fieldset {
+  border: none;
+}
+.join .inner table {
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+.join .inner table th, .join .inner table td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 25px;
+}
+.join .inner table th {
+  width: 20%;
+}
+.join .inner table th input[type=reset], .join .inner table th input[type=submit] {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #333;
+  margin: 10px;
+  font: bold 14px/40px "arial";
+  color: #555;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.join .inner table th input[type=reset]:hover, .join .inner table th input[type=submit]:hover {
+  background: #333;
+  color: #fff;
+}
+.join .inner table td {
+  border-left: 1px solid #aaa;
+}
+.join .inner table td input[type=text], .join .inner table td input[type=password], .join .inner table td select {
+  width: 60%;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+.join .inner table td input[type=radio], .join .inner table td input[type=checkbox] {
+  margin-right: 30px;
+}
+.join .inner table td textarea {
+  resize: none;
+  width: 80%;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+.join .inner table td p {
+  font: 11px/1 "맑은 고딕";
+  color: hotpink;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1179px) {
+  .join > .inner table td input[type=text],
+.join > .inner table td input[type=password],
+.join > .inner table td select,
+.join > .inner table td textarea {
+    width: 80%;
+  }
+  .join > .inner table td .err {
+    display: block;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 539px) {
+  .join > .inner table th {
+    display: none;
+    padding: 15px 0px;
+  }
+  .join > .inner table th:last-child {
+    display: block;
+    width: 100%;
+  }
+  .join > .inner table th input[type=reset],
+.join > .inner table th input[type=submit] {
+    width: 48%;
+    margin: 0px;
+  }
+  .join > .inner table td {
+    border-left: none;
+    padding: 15px 0px;
+  }
+  .join > .inner table td input[type=text],
+.join > .inner table td input[type=password],
+.join > .inner table td select,
+.join > .inner table td textarea {
+    width: 100%;
+  }
+}
 .about {
   padding: 0;
 }
@@ -1481,20 +1582,21 @@ a {
   text-align: center;
   margin-bottom: 50px;
 }
-#new-arrival .inner i {
-  position: absolute;
+#new-arrival .inner .slider-btn {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#new-arrival .inner .slider-btn i {
   font-size: 50px;
   color: #555;
   top: 0;
   cursor: pointer;
 }
-#new-arrival .inner .fa-angle-left {
-  top: 0;
-  left: 0;
+#new-arrival .inner .slider-btn .fa-angle-left {
+  margin-right: 50px;
 }
-#new-arrival .inner .fa-angle-right {
-  top: 0;
-  right: 0;
+#new-arrival .inner .slider-btn .fa-angle-right {
+  margin-left: 50px;
 }
 #new-arrival .inner .slider-wrapper {
   position: relative;
@@ -1511,7 +1613,6 @@ a {
   display: flex;
 }
 #new-arrival .inner .slider-wrapper .wrap-imgs article {
-  flex: 1;
   width: 250px;
   margin: 0 25px;
   text-align: center;
@@ -1561,7 +1662,7 @@ a {
   position: relative;
 }
 #brand .inner h2 {
-  font: normal 40px/1 "Cormorant Garamond", serif;
+  font-size: 40px;
   color: #333;
   text-align: center;
   margin-bottom: 50px;
@@ -1672,7 +1773,7 @@ a {
   margin: 150px 0;
 }
 #banner h2 {
-  font: normal 40px/1 "Cormorant Garamond", serif;
+  font: bold 38px/1 "arial";
   color: #333;
   text-align: center;
   margin-bottom: 30px;
@@ -1700,7 +1801,7 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 40%;
+  width: 50%;
   height: 100%;
   margin: 0 auto;
   padding: 100px 0;
@@ -1759,13 +1860,14 @@ a {
   margin: 0 auto 150px;
 }
 #testimonials .inner .testimonials-wrap h2 {
-  font: normal 30px/1 "Cormorant Garamond", serif;
+  font-size: 30px;
 }
 #testimonials .inner .testimonials-wrap section {
   width: 50%;
   height: 400px;
   float: left;
   padding: 6%;
+  font-family: "Raleway", sans-serif;
 }
 #testimonials .inner .testimonials-wrap section .profile .pic {
   width: 100px;
@@ -1780,8 +1882,7 @@ a {
 }
 #testimonials .inner .testimonials-wrap section .profile h2 {
   font-size: 20px;
-  font-family: "Raleway", sans-serif;
-  margin: 14px 0 6px;
+  margin: 5px 0;
 }
 #testimonials .inner .testimonials-wrap section .profile p {
   margin-bottom: 10px;
@@ -1917,6 +2018,13 @@ a {
     background: rgba(86, 123, 107, 0.4);
     color: #fff;
   }
+  #new-arrival .inner {
+    width: 100%;
+  }
+  #new-arrival .inner .slider-wrapper {
+    width: 600px;
+    margin: 0 auto;
+  }
   #brand .inner {
     width: 100%;
   }
@@ -1984,6 +2092,13 @@ a {
 }
 /* mobile 구간 */
 @media screen and (max-width: 539px) {
+  #new-arrival .inner {
+    width: 100%;
+  }
+  #new-arrival .inner .slider-wrapper {
+    width: 300px;
+    margin: 0 auto;
+  }
   #brand {
     padding-bottom: 60px;
   }
