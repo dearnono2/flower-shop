@@ -787,7 +787,7 @@ a {
   height: 1200px;
 }
 .shop .inner .wrapper .category-sidebar .category-menu h2 {
-  font-size: 22px;
+  font: 600 28px/1 "Cormorant Garamond", serif;
   margin-bottom: 40px;
 }
 .shop .inner .wrapper .category-sidebar .category-menu #category > li {

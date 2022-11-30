@@ -28,25 +28,21 @@ function isTxt(id, len) {
   if(len === undefined) len = 5;
 
   
-  // 해당 name값의 input요소를 찾아서
   let input = form.querySelector(`[name=${id}]`);
-  // 해당 input요소의 value값를 가지고옴.
+
   let txt = input.value;
 
-  // 입력받은 value값의 글자수가 len글자 이상이면?
   if(txt.length >= len) {
 
-    // 일단 에러메세지의 p요소가 있는지를 판별한 후
     const errMsgs = input.closest('td').querySelectorAll('p');
-    // p요소가 있다면 제거한다.
+
     if(errMsgs.length > 0) input.closest('td').querySelector('p').remove();
     return true;
 
   } else {
 
-    // 일단 에러메세지의 p요소가 있는지를 판별한 후
     const errMsgs = input.closest('td').querySelectorAll('p');
-    // p요소가 있다면 제거한다.
+    
     if(errMsgs.length > 0) input.closest('td').querySelector('p').remove();
 
     // p태그로 에러메세지를 생성하여 해당 input요소의 부모 td의 뒤쪽에 삽입.
@@ -100,7 +96,7 @@ function isCheck(el) {
 
     // p태그로 에러메세지를 생성하여 해당 input요소의 부모 td의 뒤쪽에 삽입.
     const errMsg = document.createElement('p');
-    errMsg.append("please select something");
+    errMsg.append("Please select something");
     inputs[0].closest('td').append(errMsg);
     return false;
   }
@@ -121,7 +117,7 @@ function isSelect(el) {
     if(errMsgs.length > 0) sel.closest('td').querySelector('p').remove();
 
     const errMsg = document.createElement('p');
-    errMsg.append('항목을 선택해주세요');
+    errMsg.append('Please select something');
     sel.closest('td').append(errMsg);
     return false;
   }
