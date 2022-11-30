@@ -35,7 +35,7 @@ for(let i = 1; i <= 12; i++) {
   <div class="item">
     <div class="img">
       
-      <img src="../img/product${i}.jpg" alt="">
+      <img src="img/product${i}.jpg" alt="">
     </div>
     <div class="txt">
       <p><b>PRODUCT${i}</b></p>
