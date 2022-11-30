@@ -279,21 +279,113 @@
     }
 
     // slider 버튼
-    .slider-btn {
-      text-align: center;
-      margin-bottom: 50px;
-      i {
-        // position: absolute;
-        font-size: 50px;
-        color: #555;
-        top: 0;
-        cursor: pointer;
+    .prev {
+      position: absolute;
+      display: block;
+      width: 50px; height: 50px;
+      top: 0; left: 30px;
+      cursor: pointer;
+      &::before {
+        content: '';
+        display: block;
+        width: 100%; height: 2px;
+        background: #333;
+        position: absolute;
+        top: 50%; left: 0;
+        transform: rotate(-30deg);
+        transform-origin: left center;
+        transition: 0.5s;
       }
-      .fa-angle-left {
-        margin-right: 50px;
+      &::after {
+        content: '';
+        display: block;
+        width: 100%; height: 2px;
+        background: #333;
+        position: absolute;
+        top: 50%; left: 0;
+        transform: rotate(30deg);
+        transform-origin: left center;
+        transition: 0.5s;
       }
-      .fa-angle-right {
-        margin-left: 50px;
+      p {
+        position: absolute;
+        color: #333;
+        top: 50%; left: 50%; 
+        transform: translate(100%, -50%);
+        transition: 0.5s;
+        opacity: 0;
+        font: 600 12px/1 "Cormorant Garamond", serif;
+
+      }
+      &:hover {
+        &::before {
+          top: 0;
+          transform: rotate(-180deg);
+          transform-origin: center center;
+        }
+        &::after {
+          top: 100%;
+          transform: rotate(180deg);
+          transform-origin: center center;
+        }
+        p {
+          transform: translate(-50%, -50%);
+          opacity: 1;
+        }
+      }
+    }
+    .next {
+      position: absolute;
+      display: block;
+      width: 50px; height: 50px;
+      top: 0; right: 30px;
+      cursor: pointer;
+      &::before {
+        content: '';
+        display: block;
+        width: 100%; height: 2px;
+        background: #333;
+        position: absolute;
+        top: 50%; right: 0;
+        transform: rotate(30deg);
+        transform-origin: right center;
+        transition: 0.5s; 
+      }
+      &::after {
+        content: '';
+        display: block;
+        width: 100%; height: 2px;
+        background: #333;
+        position: absolute;
+        top: 50%; right: 0;
+        transform: rotate(-30deg);
+        transform-origin: right center;
+        transition: 0.5s;
+      }
+      p {
+        position: absolute;
+        color: #333;
+        top: 50%; right: 50%;
+        transform: translate(-150%, -50%);
+        opacity: 0;
+        transition: 0.5s;
+        font: 600 12px/1 "Cormorant Garamond", serif;
+      }
+      &:hover {
+        &::before {
+          top: 0;
+          transform: rotate(180deg);
+          transform-origin: center center;
+        }
+        &::after {
+          top: 100%;
+          transform: rotate(-180deg);
+          transform-origin: center center;
+        }
+        p {
+          transform: translate(50%, -50%);
+          opacity: 1;
+        }
       }
     }
 
@@ -307,16 +399,12 @@
         top: 0; left: 0;
         width: 1800px; height: 100%;
         display: flex;
-        // transition: 0.5s;
         
         article {
-          // flex: 1;
-          // float: left;
           width: 250px;
           margin: 0 25px;
           text-align: center;
           background: #fff;
-          // box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
           
           .pic {
             width: 250px; height: 250px;
@@ -505,7 +593,7 @@
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      width: 50%; height: 100%;
+      width: 40%; height: 100%;
       margin: 0 auto;
       padding: 100px 0;
       background: #eee;
@@ -739,10 +827,6 @@
       .slider-wrapper {
         width: 600px;
         margin: 0 auto;
-        .wrap-imgs {
-          article {
-          }
-        }
       }
     }
   }
@@ -849,13 +933,22 @@
   #new-arrival {
     .inner {
       width: 100%;
+      h2 {
+        margin-bottom: 120px;
+      }
+      .prev {
+        top: 80px;
+        left: 30%;
+        transform: translateX(-50%);
+      }
+      .next {
+        top: 80px;
+        right: 30%;
+        transform: translateX(50%);
+      }
       .slider-wrapper {
         width: 300px;
         margin: 0 auto;
-        .wrap-imgs {
-          article {
-          }
-        }
       }
     }
   }
@@ -887,6 +980,24 @@
           width: 90%;
           .item-txt {
             width: 80%;
+          }
+        }
+      }
+    }
+  }
+
+  // testimonials mobile
+  #testimonials {
+    .inner {
+      .testimonials-wrap {
+        section {
+          display: block;
+          margin-bottom: 100px;
+          .profile {
+            width: 100%;
+          }
+          .profile-text {
+            width: 100%;
           }
         }
       }
