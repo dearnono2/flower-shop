@@ -12,9 +12,9 @@ btnSubmit.addEventListener('click', (e) => {
 
   if(!isCheck('gender')) e.preventDefault();
 
-  if(!isCheck('hobby')) e.preventDefault();
+  if(!isCheck('interests')) e.preventDefault();
 
-  if(!isSelect('edu')) e.preventDefault();
+  if(!isSelect('age')) e.preventDefault();
 
   if(!isPwd('pwd1', 'pwd2', 5)) e.preventDefault();
 
@@ -146,15 +146,15 @@ function isPwd(name1,name2,len) {
   if(pwd1_value === pwd2_value && pwd1_value.length >= len && num.test(pwd1_value) && eng.test(pwd1_value) && spc.test(pwd1_value)) {
     const errMsgs = input.closest('td').querySelectorAll('p');
     if(errMsgs.length > 0) input.closest('td').querySelector('p').remove();
-
     return true;
+
   } else {
-    const errMsgs = input.closest('td').querySelectorAll('p');
-    if(errMsgs.length > 0) input.closest('td').querySelector('p').remove();
+    const errMsgs = pwd1.closest('td').querySelectorAll('p');
+    if(errMsgs.length > 0) pwd1.closest('td').querySelector('p').remove();
 
     const errMsg = document.createElement('p');
-    errMsg.append('The email address must include @');
-    input.closest('td').append(errMsg);
+    errMsg.append(`Password must has at least ${len} characters that include at least 1 number, and 1 special character in (!@#$%^&*)`);
+    pwd1.closest('td').append(errMsg);
     return false;
   
   }
