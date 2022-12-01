@@ -108,19 +108,19 @@ window.addEventListener('scroll', (e) => {
   // console.log(window.scrollY);
   if(window.scrollY > 2600) {
     item[0].classList.add('show');
-  } else if (window.scrollY > 2550) {
+  } else if (window.scrollY > 2500) {
     item[0].classList.remove('show');
   }
 
-  if(window.scrollY > 3000) {
+  if(window.scrollY > 3100) {
     item[1].classList.add('show');
-  } else if (window.scrollY > 2900) {
+  } else if (window.scrollY > 2800) {
     item[1].classList.remove('show');
   }
 
-  if(window.scrollY > 3400) {
+  if(window.scrollY > 3700) {
     item[2].classList.add('show');
-  } else if (window.scrollY > 3300) {
+  } else if (window.scrollY > 3400) {
     item[2].classList.remove('show');
   }
 })
