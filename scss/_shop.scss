@@ -125,7 +125,8 @@
                   background: #fff;
                   p {
                     transition: 0.5s;
-                    b {
+                    &:nth-of-type(1) {
+                      font-weight: 600;
                       cursor: pointer;
                     }
                     &.price {

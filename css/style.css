@@ -900,7 +900,8 @@ a {
 .shop .inner .wrapper .products .products-wrap .products-middle .products-items-wrap .item .txt p {
   transition: 0.5s;
 }
-.shop .inner .wrapper .products .products-wrap .products-middle .products-items-wrap .item .txt p b {
+.shop .inner .wrapper .products .products-wrap .products-middle .products-items-wrap .item .txt p:nth-of-type(1) {
+  font-weight: 600;
   cursor: pointer;
 }
 .shop .inner .wrapper .products .products-wrap .products-middle .products-items-wrap .item .txt p.price {
@@ -1542,7 +1543,7 @@ a {
   text-align: center;
 }
 #visual .inner h2 {
-  font: normal 50px/1 "arial";
+  font: normal 50px/1 "Cormorant Garamond", serif;
   color: #fff;
   margin-bottom: 20px;
 }
@@ -1735,9 +1736,8 @@ a {
   transform: scale(1.1);
 }
 #new-arrival .inner .slider-wrapper .wrap-imgs article h3 {
-  margin-top: 10px;
-  font: normal 20px/1 "Cormorant Garamond", serif;
-  font-weight: 600;
+  margin-top: 14px;
+  font: normal 20px/1 "arial", serif;
 }
 #new-arrival .inner .slider-wrapper .wrap-imgs article h3 a {
   color: #333;
@@ -1764,10 +1764,10 @@ a {
   position: relative;
 }
 #brand .inner h2 {
-  font-size: 40px;
   color: #333;
   text-align: center;
   margin-bottom: 50px;
+  font: normal 50px/1 "Cormorant Garamond", serif;
 }
 #brand .inner .wrap {
   width: 100%;
@@ -1789,10 +1789,9 @@ a {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: 0.5s;
-  font-size: 34px;
   letter-spacing: 2px;
   color: #fff;
-  font-family: "Raleway", sans-serif;
+  font: normal 34px/1 "Cormorant Garamond", serif;
   text-align: center;
   z-index: 3;
 }
@@ -1875,7 +1874,7 @@ a {
   margin: 150px 0;
 }
 #banner h2 {
-  font: bold 38px/1 "arial";
+  font: normal 50px/1 "Cormorant Garamond", serif;
   color: #333;
   text-align: center;
   margin-bottom: 30px;

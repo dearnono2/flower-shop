@@ -234,7 +234,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     h2 {
-      font: normal 50px/1 'arial';
+      font: normal 50px/1 "Cormorant Garamond", serif;
       color: #fff;
       margin-bottom: 20px;
     }
@@ -420,9 +420,8 @@
             }
           }
           h3 {
-            margin-top: 10px;
-            font: normal 20px/1 "Cormorant Garamond", serif;
-            font-weight: 600;
+            margin-top: 14px;
+            font: normal 20px/1 "arial", serif;
             a {
               color: #333;
             }
@@ -453,10 +452,10 @@
     margin: 0 auto;
     position: relative;
     h2 {
-      font-size: 40px;
       color: #333;
       text-align: center;
       margin-bottom: 50px;
+      font: normal 50px/1 "Cormorant Garamond", serif;
     }
     .wrap {
       width: 100%;
@@ -478,10 +477,9 @@
             transform: translate(-50%,-50%);
             opacity: 0;
             transition: 0.5s;
-            font-size: 34px;
             letter-spacing: 2px;
             color: #fff;
-            font-family: "Raleway", sans-serif;
+            font: normal 34px/1 "Cormorant Garamond", serif;
             text-align: center;
             z-index: 3;
           }
@@ -549,9 +547,7 @@
         background-color: #F0F2B6;
         z-index: 3;
         padding: 20px;
-        // padding: 170px 50px 0;
         text-align: center;
-        // border: 2px solid #333;
         p {
           font-size: 26px;
           color: #333;
@@ -567,7 +563,7 @@
   width: 100%; 
   margin: 150px 0;
   h2 {
-    font: bold 38px/1 'arial';
+    font: normal 50px/1 "Cormorant Garamond", serif;
     color: #333;
     text-align: center;
     margin-bottom: 30px;
