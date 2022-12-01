@@ -44,18 +44,18 @@ categoryListNum(1);
 
 // 상품 목록 배열
 let products = [
-  { id: 0, title: 'Angel Shower', price: 68 },
-  { id: 1, title: 'Angel Shower Basket', price: 62 },
-  { id: 2, title: 'Heaven And Earth', price: 72 },
+  { id: 0, title: 'Angel Shower', price: 80 },
+  { id: 1, title: 'Angel Shower Basket', price: 72 },
+  { id: 2, title: 'Heaven And Earth', price: 88 },
   { id: 3, title: 'Juliet Garden Roses', price: 105 },
   { id: 4, title: 'Love & Happiness Kit', price: 80 },
   { id: 5, title: 'Celestial', price: 140 },
-  { id: 6, title: 'From The Garden', price: 88 },
-  { id: 7, title: 'Victoria Falls', price: 58 },
-  { id: 8, title: 'Cream Deluxe', price: 65 },
+  { id: 6, title: 'From The Garden', price: 90 },
+  { id: 7, title: 'Victoria Falls', price: 68 },
+  { id: 8, title: 'Cream Deluxe', price: 70 },
   { id: 9, title: 'Cream & Neutral', price: 128 },
-  { id: 10, title: 'Blue Dream', price: 112 },
-  { id: 11, title: 'Darling Clementine', price: 95 },
+  { id: 10, title: 'Blue Dream', price: 150 },
+  { id: 11, title: 'Darling Clementine', price: 115 },
 ]
 
 
