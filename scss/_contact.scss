@@ -61,6 +61,11 @@
               font-weight: 600;
             }
           }
+          .icons {
+            img {
+              margin: 0 10px;
+            }
+          }
         }
       }
     }
@@ -71,8 +76,6 @@
       width: 100%; height: 350px;
       #map {
         width: 100%; height: 100%;
-        // border: 1px solid #000;
-        
       }
       // 카카오 지도 zoom 가능 버튼
       // .map-zoomable {
