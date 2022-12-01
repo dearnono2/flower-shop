@@ -1,3 +1,23 @@
+/* section - header - menubar 영역 */
+
+const btnCall = document.querySelector(".btnCall");
+const menuMo = document.querySelector(".menuMo");
+
+// 이벤트 바인딩
+
+// btnCall을 클릭할 때
+btnCall.onclick = function(e) {
+  // 링크 이동 금지
+  e.preventDefault();
+
+  // btnCall에 on이 있으면 제거하고, 없으면 추가
+  btnCall.classList.toggle("on");
+  // menuMo에 on이 있으면 제거하고, 없으면 추가
+  menuMo.classList.toggle("on");
+}
+
+/* // section - header - menubar 영역 */
+
 // about member change 부분
 
 const memberOne = document.querySelector('#member1');

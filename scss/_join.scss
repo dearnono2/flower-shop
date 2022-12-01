@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     h2 {
-      font: normal 60px/1 'Raleway';
+      font: normal 50px/1 "Cormorant Garamond", serif;
       color: #555;
       margin-bottom: 50px;
     }
@@ -57,7 +57,7 @@
 
         // 동적으로 생성될 에러 메세지 스타일
         p {
-          font: 11px/1 '맑은 고딕';
+          font: 11px/1 'arial';
           color: hotpink;
           margin-top: 5px;
         }

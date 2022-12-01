@@ -1,7 +1,23 @@
+/* section - header - menubar 영역 */
 
-// js 키
-// 9cd7318fa05bd7c933e9c968cdc8ceb4 
-// 선릉역 위도  37.504487 경도 127.048957
+const btnCall = document.querySelector(".btnCall");
+const menuMo = document.querySelector(".menuMo");
+
+// 이벤트 바인딩
+
+// btnCall을 클릭할 때
+btnCall.onclick = function(e) {
+  // 링크 이동 금지
+  e.preventDefault();
+
+  // btnCall에 on이 있으면 제거하고, 없으면 추가
+  btnCall.classList.toggle("on");
+  // menuMo에 on이 있으면 제거하고, 없으면 추가
+  menuMo.classList.toggle("on");
+}
+
+/* // section - header - menubar 영역 */
+
 
 
 var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
