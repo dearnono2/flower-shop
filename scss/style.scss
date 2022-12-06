@@ -546,12 +546,16 @@
         width: 260px; height: 220px;
         background-color: #F0F2B6;
         z-index: 3;
-        padding: 20px;
-        text-align: center;
+        padding: 30px;
+        // text-align: center;
         p {
-          font-size: 26px;
+          position: absolute;
+          top: 50%; left: 50%;
+          transform: translate(-50%,-50%);
+          font-size: 14px;
           color: #333;
           margin-bottom: 30px;
+          font: 600 14px/1.4 "Raleway", sans-serif;
         }
       }
     }
