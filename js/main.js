@@ -105,7 +105,7 @@ const item = banner.querySelectorAll('.item');
 
 
 window.addEventListener('scroll', (e) => {
-  console.log(window.scrollY);
+  // console.log(window.scrollY);
   if(window.scrollY > 2600) {
     item[0].classList.add('show');
   } else if (window.scrollY > 2500) {
