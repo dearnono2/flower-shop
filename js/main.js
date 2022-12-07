@@ -105,22 +105,22 @@ const item = banner.querySelectorAll('.item');
 
 
 window.addEventListener('scroll', (e) => {
-  // console.log(window.scrollY);
+  console.log(window.scrollY);
   if(window.scrollY > 2600) {
     item[0].classList.add('show');
   } else if (window.scrollY > 2500) {
     item[0].classList.remove('show');
   }
 
-  if(window.scrollY > 3100) {
+  if(window.scrollY > 3000) {
     item[1].classList.add('show');
   } else if (window.scrollY > 2800) {
     item[1].classList.remove('show');
   }
 
-  if(window.scrollY > 3700) {
+  if(window.scrollY > 3300) {
     item[2].classList.add('show');
-  } else if (window.scrollY > 3400) {
+  } else if (window.scrollY > 3100) {
     item[2].classList.remove('show');
   }
 })

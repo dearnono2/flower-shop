@@ -20,16 +20,16 @@ btnCall.onclick = function(e) {
 
 // about member change 부분
 
-const memberOne = document.querySelector('#member1');
-const memberThree = document.querySelector('#member3');
+// const memberOne = document.querySelector('#member1');
+// const memberThree = document.querySelector('#member3');
 
-function mouseover(member, num) {
-  member.setAttribute('src', `img/about${num}.jpg`);
-}
+// function mouseover(member, num) {
+//   member.setAttribute('src', `img/about${num}.jpg`);
+// }
 
-function mouseleave(member, num) {
-  member.setAttribute('src', `img/about${num}.jpg`);
-}
+// function mouseleave(member, num) {
+//   member.setAttribute('src', `img/about${num}.jpg`);
+// }
 
 
 // youtube api 불러오기
