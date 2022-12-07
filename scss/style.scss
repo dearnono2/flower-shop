@@ -208,6 +208,19 @@
           }
         }
       }
+      .icons {
+        margin-top: 20px;
+        text-align: center;
+        i {
+          margin: 10px;
+          color: #aaa;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.1);
+            color: #fff;
+          }
+        }
+      }
     }
   }
 }

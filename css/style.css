@@ -217,6 +217,22 @@ a {
   color: #888;
   text-align: center;
 }
+#header_sub .inner .menuMo #gnbMo li:hover a {
+  color: #ccc;
+}
+#header_sub .inner .menuMo .icons {
+  margin-top: 20px;
+  text-align: center;
+}
+#header_sub .inner .menuMo .icons i {
+  margin: 10px;
+  color: #aaa;
+  cursor: pointer;
+}
+#header_sub .inner .menuMo .icons i:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
 
 .content {
   width: 100%;
@@ -1543,6 +1559,19 @@ a {
 }
 #header .inner .menuMo #gnbMo li:hover a {
   color: #ccc;
+}
+#header .inner .menuMo .icons {
+  margin-top: 20px;
+  text-align: center;
+}
+#header .inner .menuMo .icons i {
+  margin: 10px;
+  color: #aaa;
+  cursor: pointer;
+}
+#header .inner .menuMo .icons i:hover {
+  transform: scale(1.1);
+  color: #fff;
 }
 
 /* figure visual 영역 */
