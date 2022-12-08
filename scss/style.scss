@@ -295,7 +295,7 @@
     .prev {
       position: absolute;
       display: block;
-      width: 50px; height: 50px;
+      width: 46px; height: 46px;
       top: 0; left: 30px;
       cursor: pointer;
       &::before {
@@ -350,7 +350,7 @@
     .next {
       position: absolute;
       display: block;
-      width: 50px; height: 50px;
+      width: 46px; height: 46px;
       top: 0; right: 30px;
       cursor: pointer;
       &::before {
@@ -405,6 +405,7 @@
     .slider-wrapper {
       position: relative;
       width: 1200px; height: 360px;
+      margin: 0 auto;
       overflow: hidden;
       
       .wrap-imgs {
