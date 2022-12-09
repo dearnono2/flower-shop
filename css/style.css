@@ -2243,12 +2243,12 @@ a {
     display: flex;
     width: 100%;
     height: 300px;
-    justify-content: space-between;
+    justify-content: center;
   }
   #testimonials .inner .testimonials-wrap section .profile {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 36%;
   }
   #testimonials .inner .testimonials-wrap section .profile-text {
     width: 50%;
