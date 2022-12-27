@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-size: 1.6rem;
+}
+
 ul, ol, li {
   list-style: none;
 }
@@ -252,7 +259,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 38px;
+  font-size: 3.8rem;
   z-index: 3;
   font-family: "Cormorant Garamond", serif;
 }
@@ -357,6 +364,11 @@ a {
   .content .sub_vidual {
     height: 200px;
   }
+  .content .sub_vidual .sub-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2.8rem;
+  }
   .content .sub_vidual .top-pad {
     width: 380px;
   }
@@ -381,6 +393,9 @@ a {
   }
   .content .sub_vidual {
     height: 150px;
+  }
+  .content .sub_vidual .sub-title {
+    font-size: 1.8rem;
   }
   .content .sub_vidual .top-pad {
     width: 280px;
