@@ -264,8 +264,26 @@
   .shop {
     .inner {
       .wrapper {
+        .category-sidebar {
+          .category-menu {
+            #category {
+              & > li {
+                width: 100%;
+                margin-right: 0;
+                a {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
         .products {
           .products-wrap {
+            .products-top {
+              h2 {
+                font-size: 3.8rem;
+              }
+            }
             .products-middle {
               .products-items-wrap {
                 .item {

@@ -1058,6 +1058,16 @@ a {
 }
 /* mobile 구간 */
 @media screen and (max-width: 539px) {
+  .shop .inner .wrapper .category-sidebar .category-menu #category > li {
+    width: 100%;
+    margin-right: 0;
+  }
+  .shop .inner .wrapper .category-sidebar .category-menu #category > li a {
+    width: 100%;
+  }
+  .shop .inner .wrapper .products .products-wrap .products-top h2 {
+    font-size: 3.8rem;
+  }
   .shop .inner .wrapper .products .products-wrap .products-middle .products-items-wrap .item {
     width: 100%;
   }
