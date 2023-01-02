@@ -262,6 +262,7 @@ a {
   font-size: 3.8rem;
   z-index: 3;
   font-family: "Cormorant Garamond", serif;
+  text-align: center;
 }
 .content .sub_vidual .top-pad {
   position: absolute;
@@ -364,11 +365,6 @@ a {
   .content .sub_vidual {
     height: 200px;
   }
-  .content .sub_vidual .sub-title {
-    width: 100%;
-    text-align: center;
-    font-size: 2.8rem;
-  }
   .content .sub_vidual .top-pad {
     width: 380px;
   }
@@ -395,7 +391,7 @@ a {
     height: 150px;
   }
   .content .sub_vidual .sub-title {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
   .content .sub_vidual .top-pad {
     width: 280px;
@@ -487,6 +483,9 @@ a {
 }
 
 @media screen and (max-width: 1179px) {
+  .join .sub_vidual .sub-title {
+    font-size: 2.8rem;
+  }
   .join > .inner table td input[type=text],
 .join > .inner table td input[type=password],
 .join > .inner table td select,
@@ -499,6 +498,12 @@ a {
   }
 }
 @media screen and (max-width: 539px) {
+  .join .sub_vidual .sub-title {
+    font-size: 1.8rem;
+  }
+  .join .sub_vidual .top-pad {
+    width: 280px;
+  }
   .join > .inner table th {
     display: none;
     padding: 15px 0px;

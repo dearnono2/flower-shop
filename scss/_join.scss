@@ -68,6 +68,11 @@
 
 @media screen and (max-width: 1179px) {
 	.join {
+    .sub_vidual {
+      .sub-title {
+        font-size: 2.8rem;
+      }
+    }
 		> .inner {
 			table {
 				td {
@@ -89,6 +94,14 @@
 
 @media screen and (max-width: 539px) {
 	.join {
+    .sub_vidual {
+      .sub-title {
+        font-size: 1.8rem;
+      }
+      .top-pad {
+        width: 280px;
+      }
+    }
 		> .inner {
 			table {
 				th {
