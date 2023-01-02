@@ -1076,18 +1076,21 @@ a {
   }
 }
 .faqs .inner {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 0;
   font-family: "Cormorant Garamond", serif;
 }
 .faqs .inner .faq-wrapper {
+  width: 100%;
   background: #fff;
   text-align: center;
   color: #555;
+  border-top: 1px solid #ccc;
   margin-bottom: 150px;
 }
 .faqs .inner .faq-wrapper #faq-ul {
   width: 100%;
-  margin: 0 auto;
-  border-top: 1px solid #ccc;
 }
 .faqs .inner .faq-wrapper #faq-ul .faq-list {
   margin: 10px;
@@ -1219,6 +1222,38 @@ a {
   color: #fff;
 }
 
+/* 반응형 */
+/* tablet 구간 */
+@media screen and (max-width: 1179px) {
+  .faqs .inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+/* mobile 구간 */
+@media screen and (max-width: 539px) {
+  /* header */
+  .faqs .inner table th {
+    padding: 15px;
+    background: #064420;
+    color: #fff;
+  }
+  .faqs .inner table th:nth-of-type(1) {
+    display: none;
+  }
+  .faqs .inner table th:nth-of-type(3) {
+    width: 15%;
+  }
+  .faqs .inner table th:nth-of-type(4) {
+    width: 15%;
+  }
+  .faqs .inner table td:nth-of-type(1) {
+    display: none;
+  }
+  .faqs .inner .pagination .numbers {
+    display: none;
+  }
+}
 .contact {
   padding: 0;
 }
